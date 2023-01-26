@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .rows {
+            display : flex ;
+            flex-direction:row;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Result</h1>
+<br>
+<p data-th-object="${coin}">
+Name: <span data-th-text="*{name}"></span><br>
+Price: <span data-th-text="*{currency}"></span> <span data-th-text="*{price}"></span><br>
+Date: <span data-th-text="*{date}"></span><br>
+</p>
+<div class="rows">
+    <form 
+            action="/list"
+                method="post">
+    <button type="submit">Save</button>
+    </form>
+    <form
+        action="/"
+            method="get">
+    <button type="submit">New</button>    
+    </form>
+</div>
+
+<br>
+
+</body>
+</html>

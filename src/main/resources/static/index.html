@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cryptocurrency</h1>
+        <form method="POST" action="/coin">
+            Coin ID: <input type="text" name="id" id="id" required/>
+            <br><br>
+            Currency: <input type="radio" name="currency" id="sgd" value="sgd"/> SGD
+             <input type="radio" name="currency" id="usd" value="usd"/> USD
+            <br>
+            <br>
+            <button type="submit">Quote</button>
+        </form>
+    </div>
+</body>
+</html>
